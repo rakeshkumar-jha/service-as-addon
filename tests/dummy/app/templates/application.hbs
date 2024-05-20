@@ -1,3 +1,12 @@
 <h2 id="title">Welcome to Ember</h2>
+<nav>
+  <ul>
+    <li>{{#link-to "samples"}} Samples{{/link-to}}</li>
+    <li>{{#link-to "service-albums"}} Albums{{/link-to}}</li>
+    <li>{{#link-to "service-posts"}} Posts {{/link-to}}</li>
+  </ul>
 
-{{outlet}}
+</nav>
+<main class="main-container">
+  {{outlet}}
+</main>

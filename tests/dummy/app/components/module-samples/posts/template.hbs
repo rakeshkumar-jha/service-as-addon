@@ -1,0 +1,5 @@
+<button type="button" {{action "togglePosts"}}>Show Albums</button>
+
+{{#if showPosts}}
+  {{module-services/alubms/list}}
+{{/if}}

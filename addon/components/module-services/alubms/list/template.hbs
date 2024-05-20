@@ -1,0 +1,13 @@
+{{#if showClose}}
+  <button type="button" {{action "onClose"}}> Close </button>
+{{/if}}
+<h1>Albums</h1>
+{{#if isLoading}}
+  <h3> Loading...</h3>
+{{else}}
+  <div class="album-list">
+    {{#each albums as |album|}}
+      {{module-services/alubms/card album = album}}
+    {{/each}}
+  </div>
+{{/if}}
